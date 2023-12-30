@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-8">
+        <h1 class="text-5xl text-center">Welcome to <span class="font-semibold text-red-700	">baper bank!!!</span></h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 w-9/12 mx-auto gap-5">
+
+                <div class="bg-sky-600 text-white p-7 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-balance">00</span></h2>
+                </div>
+                <div class="bg-sky-600 text-white p-7 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-balance">00</span></h2>
+                </div>
+                <div class="bg-sky-600 text-white p-7 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="total-balance">1200</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-8 w-9/12 mx-auto">
+
+                <div class="bg-blue-500 p-8 rounded-lg">
+                    <h2 class="text-4xl text-white mb-5">Diposite Please</h2>
+                    <input type="number" id="diposit-field" class="block p-2 rounded-lg w-9/12 mb-3"
+                        placeholder="$ please enter your amount">
+                    <button id="diposit-btn"
+                        class="bg-sky-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600">Submit</button>
+                </div>
+                <div class="bg-blue-500 p-8 rounded-lg">
+                    <h2 class="text-4xl text-white mb-5">Withdraw Please</h2>
+                    <input type="number" id="withdraw-field" class="block p-2 rounded-lg w-9/12 mb-3"
+                        placeholder="$ please enter your amount">
+                    <button id="withdraw-btn"
+                        class="bg-sky-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600">Submit</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <!-- <script src="js files/balance.js"></script> -->
+    <script src="js files/deposit.js"></script>
+    <script src="js files/withdraw.js"></script>
+</body>
+
+</html>
